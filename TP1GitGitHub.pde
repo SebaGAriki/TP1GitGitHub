@@ -17,6 +17,4 @@ void draw(){
   miLogoDVD.dibujar();
   miLogoDVD.validarRebote();
   miLogoDVD.mover(deltaTime);
-  afafaf
-  afafaf
 }
