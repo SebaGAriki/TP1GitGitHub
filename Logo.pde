@@ -17,5 +17,8 @@ class Logo{
     imageMode(CENTER);
     image(this.imagen, this.posicion.x, this.posicion.y, this.tamanio.x, this.tamanio.y);
   }
-  
+  void mover(float deltaTime){
+    this.posicion.x += this.velocidad.x * deltaTime;
+    this.posicion.y += this.velocidad.y * deltaTime;
+  }
 }
