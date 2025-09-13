@@ -3,7 +3,8 @@ private int tiempoAnterior;
 
 void setup(){
   fullScreen();
-  miLogoDVD = new Logo(new PVector(width/6, height/2), new PVector(width/6, height/8), new PVector(100, 100), loadImage("dvd-logo.png"));
+  frameRate(30);
+  miLogoDVD = new Logo(new PVector(width/6, height/2), new PVector(width/6, height/8), new PVector(200, 200), loadImage("dvd-logo.png"));
   tiempoAnterior = millis();
 }
 void draw(){
@@ -14,5 +15,6 @@ void draw(){
   
   background(0);
   miLogoDVD.dibujar();
+  miLogoDVD.validarRebote();
   miLogoDVD.mover(deltaTime);
 }
